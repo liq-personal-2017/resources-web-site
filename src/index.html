@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>软件站</title>
+        <script src="/not-ie.js"></script>
+        <script src="/jquery/dist/jquery.min.js"></script>
+        <script src="/lodash/lodash.min.js"></script>
+        <link rel="stylesheet" href="/bootstrap.css" />
+        <link rel="stylesheet" href="/font-awesome-4.7.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="/main.css" />
+        <script src="/index.js"></script>
+    </head>
+    <body>
+        <div class="container" data-view="search">
+            <section class="hidden-print">
+                <div class="stripe-ad">
+                    <p class="lead">
+                        <a href="/update" title="点击刷新缓存">凑合用吧，要什么自行车<small>为了防止你自己忘记了，点击这里更新</small></a> 
+                        <a id="exit" href="javascript:void" style="float:right">点击这里退出</a>
+                    </p>
+                </div>
+            </section>
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <section id="search">
+                        <label for="search-input"><i class="fa fa-search" aria-hidden="true"></i><span class="sr-only">搜索图标</span></label> <input id="search-input" class="form-control input-lg" placeholder="输入及时搜索" autocomplete="off" spellcheck="false" autocorrect="off" tabindex="1" /> <a id="search-clear" href="#" class="fa fa-times-circle hide" aria-hidden="true"><span class="sr-only">清除搜索结果</span></a>
+                    </section>
+                </div>
+            </div>
+            <div id="icons">
+                <section id="search-result-container" class="hide">
+                    <h2 class="page-header">搜索结果</h2>
+                    <div class="row fontawesome-icon-list" id="search-result"></div>
+                </section>
+                <section id="web-application">
+                    <h2 class="page-header">所有软件</h2>
+                    <div class="row fontawesome-icon-list" id="all-result"></div>
+                </section>
+            </div>
+        </div>
+    </body>
+</html>
